@@ -80,22 +80,24 @@ https://testnetbeta.aleo123.io/address/enter_your_prover_address  # thanks @de44
 
  
 1. My node is unable to compile.
-Ensure your machine has Rust v1.66+ installed. Instructions to install Rust can be found here.
+Ensure your machine has Rust v1.76+ installed. Instructions to install Rust can be found here.
 If large errors appear during compilation, try running cargo clean.
 Ensure snarkOS is started using ./run-client.sh or ./run-prover.sh.
 2. My node is unable to connect to peers on the network.
 Ensure ports 4130/tcp and 3030/tcp are open on your router and OS firewall.
-Ensure snarkOS is started using ./run-client.sh or ./run-prover.sh.
-3. I can't generate a new address
+Ensure snarkOS is started using ./run-client.sh network 1 or ./run-prover.sh network 1
+snarkos start --nodisplay --network 1 --prover --private-key=paste_savedpvtkey_here
+
+4. I can't generate a new address
 Before running the command above (snarkos account new) try source ~/.bashrc
 Also double-check the spelling of snarkos. Note the directory is /snarkOS, and the command is snarkos
-4. How do I use the CLI to sign and verify a message?
+5. How do I use the CLI to sign and verify a message?
 Generate an account with snarkos account new if you haven't already
 Sign a message with your private key using snarkos account sign --raw -m "Message" --private-key-file=<PRIVATE_KEY_FILE>
 Verify your signature with snarkos account verify --raw -m "Message" -s sign1SignatureHere -a aleo1YourAccountAddress
 Note, using the --raw flag with the command will sign plaintext messages as bytes rather than Aleo values such as 1u8 or 100field.
 
-5. Command Line Interface
+6. Command Line Interface
 To run a node with custom settings, refer to the options and flags available in the snarkOS CLI.
 
 # The full list of CLI flags and options can be viewed with snarkos --help:
