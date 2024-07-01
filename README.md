@@ -1,11 +1,8 @@
-# It is recommended to follow official docs to setup and run Aleo Aleo github repo.
-# " https://github.com/AleoHQ/snarkOS#3a-run-an-aleo-client-node "
+#  It is recommended to follow official docs to setup and run Aleo Aleo github repo.
+#  https://github.com/AleoHQ/snarkOS#3a-run-an-aleo-client-node 
+#  However, if you struggle to do it, proceed with this guide here.
+#  We recommend Dedicated servers without the word ‘Virtual’. 32core or preferred 64 core Server with 500ssd minimum and 64gb RAM 
 
-# However, if you struggle to do it, proceed with this guide here.
-
-# We recommend Dedicated servers without the word ‘Virtual’. 32core or preferred 64 core Server with 500ssd minimum and 64gb RAM 
-
-# You can install the node with one-line script, root user is recommended for installation and use.
 
 # aleo prover node 
 Install aleo on any dedicated server
