@@ -66,10 +66,13 @@ snarkos start --nodisplay --network 1 --prover --private-key=paste_savedpvtkey_h
 
 ./run-prover.sh network 1
 
-#to run client
+# to run client
 
 snarkos start --nodisplay --network 1 --private-key=paste_savedpvtkey_here
 
 # or
 
 ./run-client network 1
+
+# To check scores for the incentive program, visit
+https://testnetbeta.aleo123.io/address/<enter your prover address>  # thanks @de441ck from discrod for this
