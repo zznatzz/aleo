@@ -175,3 +175,5 @@ cargo run --release -- start --nodisplay --dev <NODE_ID> --client
 cargo run --release -- start --nodisplay --dev <NODE_ID>
 
 **When no node type is specified, the node will default to --client.**
+
+#  Thanks to Secord for the rust script !!
