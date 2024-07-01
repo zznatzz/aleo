@@ -165,7 +165,11 @@ It is important to initialize the nodes starting from 0 and incrementing by 1 fo
 The following is a list of options to initialize a node (replace <NODE_ID> with a number starting from 0):
 
 cargo run --release -- start --nodisplay --dev <NODE_ID> --validator
+
 cargo run --release -- start --nodisplay --dev <NODE_ID> --prover
+
 cargo run --release -- start --nodisplay --dev <NODE_ID> --client
+
 cargo run --release -- start --nodisplay --dev <NODE_ID>
-When no node type is specified, the node will default to --client.
+
+**When no node type is specified, the node will default to --client.**
