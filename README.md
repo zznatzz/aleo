@@ -21,6 +21,7 @@ sudo apt install wget jq git build-essential pkg-config libssl-dev -y
 
 sudo apt install screen
 screen -S aleo
+
 # to come out of acreen ctl a d and to join back to the screen -- use --> screen -r aleo
 
 # Install rust
@@ -31,6 +32,7 @@ source "$HOME/.cargo/env"
 # Please ensure ports 4130/tcp and 3030/tcp are open on your router and OS firewall.
 
 sudo ufw allow 3030/tcp
+
 sudo ufw allow 4130/tcp
 
 # Start by cloning this GitHub repository:
@@ -40,6 +42,7 @@ git clone --branch mainnet --single-branch https://github.com/AleoNet/snarkOS.gi
 # Next, move into the snarkOS directory:
 
 cd snarkOS
+
 git checkout tags/testnet-beta
 
 # [For Ubuntu users] A helper script to install dependencies is available. From the snarkOS directory, run:  Lastly, install snarkOS:
