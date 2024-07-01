@@ -1,5 +1,5 @@
 #  It is recommended to follow official docs to setup and run Aleo Aleo github repo.
-#  https://github.com/AleoHQ/snarkOS#3a-run-an-aleo-client-node 
+#  https://github.com/AleoHQ/snarkOS
 #  However, if you struggle to do it, proceed with this guide here.
 #  We recommend Dedicated servers without the word ‘Virtual’. 32core or preferred 64 core Server with 500ssd minimum and 64gb RAM 
 
