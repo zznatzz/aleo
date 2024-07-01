@@ -42,8 +42,7 @@ git clone --branch mainnet --single-branch https://github.com/AleoNet/snarkOS.gi
 cd snarkOS
 git checkout tags/testnet-beta
 
-# [For Ubuntu users] A helper script to install dependencies is available. From the snarkOS directory, run:
-# Lastly, install snarkOS:
+# [For Ubuntu users] A helper script to install dependencies is available. From the snarkOS directory, run:  Lastly, install snarkOS:
 
 
 ./build_ubuntu.sh && cargo install --locked --path .
@@ -64,7 +63,10 @@ snarkos start --nodisplay --network 1 --prover --private-key=paste_savedpvtkey_h
 
 ./run-prover.sh network 1
 
-**#to run client**
+#to run client
+
 snarkos start --nodisplay --network 1 --private-key=paste_savedpvtkey_here
-or
+
+# or
+
 ./run-client network 1
