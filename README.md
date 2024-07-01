@@ -3,7 +3,7 @@
 
 # However, if you struggle to do it, proceed with this guide here.
 
-# **We recommend Dedicated servers without the word ‘Virtual’. 32core or preferred 64 core Server with 500ssd minimum and 64gb RAM **
+# We recommend Dedicated servers without the word ‘Virtual’. 32core or preferred 64 core Server with 500ssd minimum and 64gb RAM 
 
 # You can install the node with one-line script, root user is recommended for installation and use.
 
@@ -13,10 +13,12 @@ Install aleo on any dedicated server
 # Update
 sudo apt update && sudo apt upgrade -y
 
-**#Install essential packages**
+# Install essential packages
+
 sudo apt install wget jq git build-essential pkg-config libssl-dev -y
 
-**#install screen**
+# install screen
+
 sudo apt install screen
 screen -S aleo
 # to come out of acreen ctl a d and to join back to the screen -- use --> screen -r aleo
@@ -34,6 +36,7 @@ sudo ufw allow 4130/tcp
 # Start by cloning this GitHub repository:
 
 git clone --branch mainnet --single-branch https://github.com/AleoNet/snarkOS.git
+
 # Next, move into the snarkOS directory:
 
 cd snarkOS
@@ -42,15 +45,18 @@ git checkout tags/testnet-beta
 # [For Ubuntu users] A helper script to install dependencies is available. From the snarkOS directory, run:
 # Lastly, install snarkOS:
 
+
 ./build_ubuntu.sh && cargo install --locked --path .
 
-**#check is snarkos is installed properly**
+# check is snarkos is installed properly
+
 snarkos --version
 
 # Create New account & save the pvt key and its details safely you need in the next steps
+
 snarkos account new
 
-**#run prover node**
+# run prover node
 
 snarkos start --nodisplay --network 1 --prover --private-key=paste_savedpvtkey_here
 
